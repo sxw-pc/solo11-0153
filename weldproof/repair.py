@@ -10,7 +10,7 @@ def decide(db,weld_id):
     weld=db.execute('SELECT * FROM weld_record WHERE id=?',(qual['record_id'],)).fetchone() if qual and qual['record_id'] else None
     retest_lab=db.execute('SELECT * FROM lab_license WHERE id=?',(retest['lab_id'],)).fetchone() if retest else None
     if not qual or qual['state']!='qualified':state,reason='qualification_hold','weld qualification not valid'
-    elif not inspection or inspection['state'] in ('invalid_lab','self_inspection','insufficient_coverage'):state,reason='inspection_hold','independent inspection evidence missing'
+    elif not inspection or inspection['state'] in ('invalid_lab','self_inspection','insufficient_coverage','independence_pending','independence_conflict'):state,reason='inspection_hold','independent inspection evidence missing'
     elif latest and latest['repair_index']>2:state,reason='repair_dispute','more than two repair attempts'
     elif latest and latest['approved_by']!='supervisor':state,reason='repair_unapproved','repair order needs supervisor authorization'
     elif retest and (not retest_lab or not(retest_lab['start']<=retest['at']<=retest_lab['end']) or retest['at']<latest['at'] or (weld and retest['inspector']==weld['welder'])):state,reason='retest_invalid','retest lab, sequence or independence invalid'
