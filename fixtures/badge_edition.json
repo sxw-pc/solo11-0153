@@ -1,0 +1,14 @@
+{
+  "epoch": "night-shift",
+  "shop_badges": ["W-1", "W-2", "W-3"],
+  "lab_badges": ["I-1", "I-2"],
+  "binding_candidates": {
+    "I-1": ["W-1", "W-2"],
+    "I-2": ["W-2", "W-3"]
+  },
+  "confirmed_nonmatch": {"I-2": ["W-3"]},
+  "documents": [
+    {"id":"D1","operator":"W-1","inspector":"I-1"},
+    {"id":"D2","operator":"W-3","inspector":"I-2"}
+  ]
+}

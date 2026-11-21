@@ -1,0 +1,12 @@
+{
+  "repairs": [
+    {
+      "id": "REPAIR-B",
+      "weld_id": "JOINT-1",
+      "repair_index": 3,
+      "approved_by": "factory",
+      "at": "2026-02-03",
+      "defect_position": "critical"
+    }
+  ]
+}

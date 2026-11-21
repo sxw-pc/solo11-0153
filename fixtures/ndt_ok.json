@@ -1,0 +1,25 @@
+{
+  "labs": [
+    {
+      "id": "LAB-1",
+      "lab": "independent-lab",
+      "method": "ultrasound",
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  ],
+  "inspections": [
+    {
+      "id": "NDT-1",
+      "weld_id": "JOINT-1",
+      "revision": 1,
+      "inspector": "I-1",
+      "lab_id": "LAB-1",
+      "at": "2026-02-02",
+      "method": "ultrasound",
+      "sampled_mm": 80,
+      "defect_mm": 1,
+      "defect_position": "general"
+    }
+  ]
+}
