@@ -1,0 +1,25 @@
+{
+  "labs": [
+    {
+      "id": "LAB-B",
+      "lab": "factory",
+      "method": "ultrasound",
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  ],
+  "inspections": [
+    {
+      "id": "NDT-B",
+      "weld_id": "JOINT-1",
+      "revision": 1,
+      "inspector": "W-1",
+      "lab_id": "LAB-B",
+      "at": "2026-02-02",
+      "method": "ultrasound",
+      "sampled_mm": 30,
+      "defect_mm": 5,
+      "defect_position": "critical"
+    }
+  ]
+}

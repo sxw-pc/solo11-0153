@@ -1,0 +1,35 @@
+{
+  "certificates": [
+    {
+      "id": "CERT-1",
+      "welder": "W-1",
+      "grade": 3,
+      "material": "steel",
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "PROC-1",
+      "material": "steel",
+      "grade": 3,
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "approved_by": "engineer"
+    }
+  ],
+  "welds": [
+    {
+      "id": "WELD-1",
+      "weld_id": "JOINT-1",
+      "revision": 1,
+      "welder": "W-1",
+      "material": "steel",
+      "grade": 2,
+      "at": "2026-02-01",
+      "length_mm": 100,
+      "procedure_id": "PROC-1"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "certificates": [
+    {
+      "id": "CERT-B",
+      "welder": "W-B",
+      "grade": 1,
+      "material": "steel",
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "PROC-B",
+      "material": "steel",
+      "grade": 1,
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "approved_by": "factory"
+    }
+  ],
+  "welds": [
+    {
+      "id": "WELD-B",
+      "weld_id": "JOINT-B",
+      "revision": 1,
+      "welder": "W-B",
+      "material": "steel",
+      "grade": 2,
+      "at": "2026-02-01",
+      "length_mm": 100,
+      "procedure_id": "PROC-B"
+    }
+  ]
+}

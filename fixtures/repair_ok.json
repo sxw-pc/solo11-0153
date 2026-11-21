@@ -1,0 +1,10 @@
+{
+  "signoffs": [
+    {
+      "id": "SIGN-1",
+      "weld_id": "JOINT-1",
+      "signer": "supervisor",
+      "at": "2026-02-03"
+    }
+  ]
+}
