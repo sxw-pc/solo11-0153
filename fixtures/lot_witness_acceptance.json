@@ -1,0 +1,15 @@
+{
+  "box_id":"BOX-7",
+  "events":[
+    {"id":"CUT-X","kind":"seal_cut","slot":"x","seal":"SEAL-7","fixture":"FIXTURE-1","status":"pending"},
+    {"id":"CLAIM-Y","kind":"station_claim","slot":"y","claim":"A/B","station":"STALL-1","seal":"SEAL-7"},
+    {"id":"CLAIM-Z","kind":"station_claim","slot":"z","claim":"A/B","station":"STALL-2","seal":"SEAL-7"},
+    {"id":"CUSTODY-X","kind":"custody_original","slot":"x","seal":"SEAL-7","fixture":"FIXTURE-1"},
+    {"id":"ENGRAVE-X","kind":"core_engraving","slot":"x","lot":"A","witness":"WIT-1","auth":"AUTH-CORE-7","original_core":true}
+  ],
+  "issues":[
+    {"id":"ISSUE-X","request":"LOT-JOB","slot":"x"},
+    {"id":"ISSUE-Y","request":"LOT-POOL-1","slot":"y"},
+    {"id":"ISSUE-Z","request":"LOT-POOL-2","slot":"z"}
+  ]
+}
